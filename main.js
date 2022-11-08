@@ -14,10 +14,12 @@ const getUsers = (e) => {
 
   const showUsers = (users) => {
     const userList = document.querySelector(".user-list");
+    userList.textContent = "";
     console.log(users);
     users.forEach((user) => {
-      console.log(user);
-      userList.innerHTML = `<h1>${user.name.first}</h1>`;
+      const userElement = document.createElement("li");
+      userElement.innerHTML = `<img src="${user.picture.thumbnail}"/> ${user.name.first} ${user.name.last}`;
+      userList.appendChild(userElement);
     });
   };
 };
