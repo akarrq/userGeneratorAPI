@@ -1,0 +1,18 @@
+* {
+  font-family: arial;
+}
+
+body {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #eee;
+  &__user {
+    list-style: none;
+  }
+}

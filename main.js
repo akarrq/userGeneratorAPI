@@ -18,7 +18,8 @@ const getUsers = (e) => {
     console.log(users);
     users.forEach((user) => {
       const userElement = document.createElement("li");
-      userElement.innerHTML = `<img src="${user.picture.thumbnail}"/> ${user.name.first} ${user.name.last}`;
+      userElement.className = "user-list__user";
+      userElement.innerHTML = `<img class="user-list__user-image" src="${user.picture.thumbnail}"/> ${user.name.first} ${user.name.last}`;
       userList.appendChild(userElement);
     });
   };
