@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form class="generator" action="">
+      <label class="generator__input-name"
+        >Wybierz płeć:
+        <select name="gender" class="generator__select">
+          <option value="both">Wszyscy</option>
+          <option value="female">Kobiety</option>
+          <option value="male">Mężczyźni</option>
+        </select>
+      </label>
+      <label class="generator__input-name">
+        <input
+          class="generator__input"
+          name="users-number"
+          type="number"
+          value="5"
+        />
+      </label>
+      <input
+        type="submit"
+        class="generator__btn"
+        value="Pobierz użytkowników"
+      />
+    </form>
+    <div class="user-list"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
